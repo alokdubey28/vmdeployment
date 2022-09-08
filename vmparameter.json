@@ -3,10 +3,15 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "value": ""             
+            "value": "azurevmadmin"             
         },
         "adminPassword": {
-            "value": ""
-        },
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/a2599563-74fd-487e-949a-cc73f7ca809b/resourceGroups/vm-demo-rg/providers/Microsoft.KeyVault/vaults/vm-demo-vault"
+                },
+                "secretName": "vmdemosecret"
+            }
+        }
     }
 }
