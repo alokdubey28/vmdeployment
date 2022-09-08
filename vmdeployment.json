@@ -28,9 +28,9 @@
   "variables": {
     "vmName": "alokdemo-vm",
     "nicName": "myVMNic",
-    "addressPrefix": "10.0.0.0/16",
+    "addressPrefix": "10.10.10.0/25",
     "subnetName": "Subnet",
-    "subnetPrefix": "10.0.0.0/24",
+    "subnetPrefix": "10.10.10.0/27",
     "virtualNetworkName": "MyVNET",
     "networkSecurityGroupName": "default-NSG",
     "location": "[resourceGroup().location]",
