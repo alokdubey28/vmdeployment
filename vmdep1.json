@@ -121,6 +121,7 @@
     "subnetPrefix": "10.10.10.0/27",
     "virtualNetworkName": "Mydemovnet",
     "networkSecurityGroupName": "mydemovm-NSG"
+    "adminUserName": "azurevmadmin"
   },
   "resources": [
     {
@@ -206,7 +207,7 @@
         },
         "osProfile": {
           "computerName": "[parameters('vmName')]",
-          "adminUsername": "[parameters('adminUsername')]",
+          "adminUsername": "[variables('adminUsername')]",
           "adminPassword": "[parameters('adminPassword')]"
         },
         "storageProfile": {
